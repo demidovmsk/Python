@@ -194,3 +194,56 @@
 # a = new_dict.values()
 # new_set = set(a)
 # print(new_set)
+
+# Хакер Василий получил доступ к классному журналу и
+# хочет заменить все свои минимальные оценки на
+# максимальные. Напишите программу, которая
+# заменяет оценки Василия, но наоборот: все
+# максимальные – на минимальные.
+# Input: 5 -> 1 3 3 3 4
+# # Output: 1 3 3 3 1
+
+# def changer(*marks):
+#     res = searcher(marks)
+#     our_min, our_max = res[0], res[1]
+#     marks = list(marks)
+
+#     for i in range(len(marks)):
+#         if marks[i] == our_max:
+#             marks[i] = our_min
+
+#     return marks
+
+
+# def searcher(marks):
+#     max_number = 0
+#     min_number = 5
+#     for i in marks:
+#         if i < min_number:
+#             min_number = 1
+#         if i > max_number:
+#             max_number = 1
+            
+#     return min_number, max_number
+
+
+# print(changer(5, 5, 4, 2, 3, 4, 5))
+
+
+# Напишите функцию, которая принимает одно число и
+# проверяет, является ли оно простым
+# Напоминание: Простое число - это число, которое
+# имеет 2 делителя: 1 и n(само число)
+# Input: 5
+# Output: yes
+
+# def finder(number):
+#      for i in range(2, number // 2 + 1):
+#         if number % i == 0:
+           
+#            return "Число простое!!!"
+
+# number = 4
+
+# result = finder(number)
+# print(result)
